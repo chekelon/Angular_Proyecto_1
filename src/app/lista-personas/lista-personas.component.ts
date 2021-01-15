@@ -7,14 +7,15 @@ import { Persona } from '../Persona';
   styleUrls: ['./lista-personas.component.css']
 })
 export class ListaPersonasComponent implements OnInit {
-  persona: Persona = {
-    id: 1,
-    nombre: 'Ezequiel',
-    apellidos:'Rodriguez Esparza',
-    edad:32,
-    sexo:'Masculino'
-  };
-  constructor() { }
+  
+  public persona=new Persona();
+
+  constructor() {
+    this.persona.setNombre("Ezequiel");
+    this.persona.setApellido("Rodriguez Esparza");
+    this.persona.setEdad(32);
+    this.persona.setSexo("Masculino");
+   }
 
   ngOnInit(): void {
   }

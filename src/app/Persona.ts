@@ -6,5 +6,21 @@ export class Persona {
     sexo:string;
 
 
+    setNombre(nombre){
+        this.nombre=nombre;
+    }
+    setApellido(apellido){
+        this.apellidos=apellido;
+    }
+    setEdad(edad){
+        this.edad=edad;
+
+    }
+    setSexo(sexo){
+        this.sexo=sexo
+    }
+
+
+
    
   }
